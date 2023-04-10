@@ -77,12 +77,13 @@ nav {
     color: white;
 }
 
-.quote-section {
+.main-section {
     position: absolute;
-    
     top: 35%;
     left: 12%;
+}
 
+.quote-section {    
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
@@ -98,8 +99,27 @@ nav {
     -webkit-text-fill-color: transparent;
 } 
 
+.btn-section .btn {
+    color: white;
+    font-weight: 600;
+    
+    margin: 0 0.5rem;
+}
+
+.btn-section .btn:nth-of-type(1) {
+    background: var(--green);
+}
+
+.btn-section .btn:nth-of-type(2) {
+    background: var(--blue);
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1000px) {
-    .quote-section {
+    .main-section {
         left: 3rem;
     }
 }
@@ -119,10 +139,13 @@ nav {
         color: black;
     }
 
+    .main-section {
+        left: 2rem;
+    }
+
     .quote-section {
         font-size:3rem;
         width: 25rem;
-        left: 2rem;
     }
 
     .quote-section > h2 {
@@ -147,10 +170,13 @@ nav {
         font-size: 1.2rem;
     }
 
+    .main-section {
+        left: 0.5rem;
+    }
+
     .quote-section {
         width: fit-content;
         font-size:3.3rem;
-        left: 5px;
     }
 }
 
