@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --blue: #043c63;
+    --green: #80cb11;
+}
+
+.main-section-img {
+    height: 100vh;
+    width: 100vw;   
+
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+
+    position: relative;
+}
+
+@media (max-width: 990px) {
+
+}
+
+nav {
+    background: white;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    background: transparent;
+    position: fixed;
+}
+
+.nav-logo {
+    display: inline-block;
+    height: 60px;
+    width: 70px;
+}
+
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.nav-logo-text span:nth-of-type(1) {
+    height: min-content;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.nav-logo-text span:nth-of-type(2) {
+    font-size: 0.7rem;
+}
+
+.nav-links {
+    margin-right: 2rem;
+}
+
+.nav-link {
+    font-size: medium;
+    font-weight: 700;
+    margin: 0 0.5rem;
+
+    border-radius: 10px;
+
+    transition: all 0.1s;
+}
+
+.nav-link:hover, .nav-link-active {
+    background: var(--blue);
+    color: white;
+}
+
+.quote-section {
+    position: absolute;
+    
+    top: 35%;
+    left: 12%;
+
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.quote-section > h2 {
+    background: -webkit-linear-gradient(var(--blue), var(--green));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+@media (max-width: 550px) {
+    /* .main-section-img {
+        background-position-y:; 
+        background-size: ;
+    } */
+
+    nav {
+        background: var(--blue);
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .nav-link:hover, .nav-link-active {
+        background: none;
+        color: black;
+    }
+
+    .quote-section {
+        font-size:3rem;
+        z-index: -100;
+    }
+}
