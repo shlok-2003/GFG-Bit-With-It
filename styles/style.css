@@ -98,6 +98,12 @@ nav {
     -webkit-text-fill-color: transparent;
 } 
 
+@media (max-width: 1000px) {
+    .quote-section {
+        left: 3rem;
+    }
+}
+
 @media (max-width: 990px) {
     .main-section-img {
         background-position-y: 4.75rem; 
@@ -116,6 +122,7 @@ nav {
     .quote-section {
         font-size:3rem;
         width: 25rem;
+        left: 2rem;
     }
 
     .quote-section > h2 {
