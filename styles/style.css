@@ -8,7 +8,8 @@
 }
 
 :root {
-    --blue: rgba(4, 60, 99, 1);
+    --white: rgba(255, 255, 255, 1);
+    --blue: rgb(4, 60, 99, 1);
     --green: rgba(128, 203, 17, 1);
     --dark-green: rgba(110, 176, 10, 1);
     --dark-blue: rgba(35, 114, 167, 1);
@@ -151,7 +152,7 @@ nav {
     
     .nav-link:hover, .nav-link-active {
         background: none;
-        color: black;
+        color: var(--white)
     }
 
     .main-section {
