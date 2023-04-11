@@ -158,7 +158,7 @@ nav {
 
 @media (max-width: 550px) {
     .main-section-img {
-        background-position-x: -180px;
+        background-position-x: -300px;
         background-position-y: 4.75rem; 
         background-size: calc(132vh + 1rem);
 
@@ -185,7 +185,7 @@ nav {
 
 @media (max-width: 400px) {
     .main-section-img {
-        background-position-x: -240px;
+        background-position-x: -340px;
     }
 
     .quote-section {
