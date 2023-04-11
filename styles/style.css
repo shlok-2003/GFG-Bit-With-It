@@ -8,8 +8,10 @@
 }
 
 :root {
-    --blue: #043c63;
-    --green: #80cb11;
+    --blue: rgba(4, 60, 99, 1);
+    --green: rgba(128, 203, 17, 1);
+    --dark-green: rgba(110, 176, 10, 1);
+    --dark-blue: rgba(35, 114, 167, 1);
 }
 
 .main-section-img {
@@ -105,6 +107,7 @@ nav {
     font-weight: 600;
     
     text-transform: uppercase;
+    letter-spacing: -0.5px;
 }
 
 .btn-section .btn:nth-of-type(1) {
@@ -119,6 +122,15 @@ nav {
 
 .btn:hover {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.btn-section .btn:nth-of-type(1):hover {
+    background: var(--dark-green);
+}
+
+.btn-section .btn:nth-of-type(2):hover {
+    background: var(--dark-blue);
 }
 
 @media (max-width: 1000px) {
@@ -180,6 +192,10 @@ nav {
     .quote-section {
         width: fit-content;
         font-size:3.3rem;
+    }
+
+    .btn-section .btn{
+        font-size: small;
     }
 }
 
